@@ -3,7 +3,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 let uri = 'mongodb+srv://jnbailey580:<password>@cluster0.dqqwe.mongodb.net/<dbname>?retryWrites=true&w=majority'
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
